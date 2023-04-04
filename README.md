@@ -1,2 +1,2 @@
-# complaint-app
-Final Year School Project 
+# MERN Stack Complaint Manager Web App
+
