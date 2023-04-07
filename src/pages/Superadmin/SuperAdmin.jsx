@@ -31,7 +31,7 @@ function SuperAdmin() {
           </div>
         </nav>
         <div className=" py-12 px-8 ">
-          <ul className="flex flex-row py-4 px-6 lg:px-32 items-center justify-center rounded-3xl shadow-md ">
+          <ul className="flex flex-row py-4 px-6 lg:px-32 items-center gap-12 justify-center rounded-3xl shadow-md ">
             <li className="">
               <button
                 className={` border-none rounded font-semibold text-oou-blue ${
@@ -58,7 +58,7 @@ function SuperAdmin() {
             </li>
           </ul>
 
-          <div className="mt-10">
+          <div className="mt-10  ">
             {activeTab === "manageUsers" && <ManageUsers />}
             {activeTab === "editUserInfoForm" && <EditUserInfoForm />}
           </div>

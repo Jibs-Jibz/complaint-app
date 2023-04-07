@@ -26,7 +26,7 @@ const ComplaintModal = ({
 
         <div className="modal-content">
           <h2 className="modal-title ">{complaint.title}</h2>
-          <div class="relative flex ">
+          <div class="relative flex flex-row items-center gap-2 ">
             <label class=" modal-body-title font-semibold" for="status">
               Status:
             </label>

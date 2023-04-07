@@ -20,10 +20,12 @@ tbody .sn-col {
   width: 10%;
   padding-left: 15px;
 }
-
+.status {
+  text-transform: capitalize;
+}
 thead th.title-com-col,
 tbody .title-com-col {
-  width: 60%;
+  width: 45%;
 }
 
 tbody tr:hover {

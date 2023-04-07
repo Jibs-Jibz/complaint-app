@@ -136,6 +136,7 @@ const StudentComplaintTable = () => {
                   S/N
                 </th>
                 <th className="title-com-col">Complaint Title</th>
+                <th className="status">Status</th>
                 <th
                   style={{
                     borderTopRightRadius: "10px",
@@ -164,6 +165,7 @@ const StudentComplaintTable = () => {
                 >
                   <td className="sn-col">{index + 1}</td>
                   <td className="title-col">{complaint.title}</td>
+                  <td className="status" >{complaint.status}</td>
                   <td>{complaint.dateCreated}</td>
                 </tr>
               ))}

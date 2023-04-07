@@ -4,6 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(226, 232, 240);
+  max-width: 650px;
 }
 .close-button {
   position: absolute;
@@ -25,10 +26,11 @@
 }
 
 .modal-content {
+  padding: 5rem 3rem;
   border: 2px solid #d9d9d9;
   border-radius: 12px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  padding: 24px;
+  /* padding: 24px; */
   border-bottom: none;
   display: flex;
   flex-direction: column;
@@ -40,7 +42,11 @@
   font-weight: bold;
   color: #333;
   text-align: left;
-  max-width: 350px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-width: 350px; */
 }
 .modal-body-title {
   color: #130fc2;

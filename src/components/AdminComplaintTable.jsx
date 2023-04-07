@@ -144,7 +144,7 @@ const AdminComplaintTable = () => {
           <h2 className="text-2xl font-bold text-oou-blue">Categories</h2>
           <ul className="flex flex-col gap-2">
             {categories.map((category) => (
-              <li key={category.id}>{category.name}</li>
+              <li className=" text-lg font-semibold " key={category.id}>{category.name}</li>
             ))}
           </ul>
           <form onSubmit={handleAddCategory} className="flex gap-2">
