@@ -20,7 +20,7 @@ const Student = () => {
   return (
     <div className="py-8">
       <div className="bg-slate-200 container mx-auto flex flex-col gap-8">
-        <nav className="container mx-auto fixed top-0 left-0 right-0 z-50 py-4 px-6 lg:px-32 items-center justify-between flex flex-row bg-slate-200 shadow-md">
+        <nav className="container mx-auto  py-4 px-6 lg:px-32 items-center justify-between flex flex-row bg-slate-200 shadow-md">
           <div>
             <img src={logo} className="w-24" alt="" />
           </div>

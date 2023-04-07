@@ -77,7 +77,7 @@ function ManageUsers() {
           <tr>
             <th>ID</th>
             <th>Username</th>
-            <th>Password</th>
+            {/* <th>Password</th> */}
             <th>Role</th>
             <th>Last Login</th>
             <th>Action</th>
@@ -88,7 +88,7 @@ function ManageUsers() {
             <tr key={user.id}>
               <td>{user.id}</td>
               <td>{user.username}</td>
-              <td>{user.password}</td>
+              {/* <td>{user.password}</td> */}
               <td>{user.role}</td>
               <td>{user.lastLogin}</td>
               <td>
