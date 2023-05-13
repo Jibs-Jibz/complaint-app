@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import LodgeComplaint from "../components/modal/LodgeComplaint";
 import { nanoid } from "nanoid";
-
 import StudentComplaintTable from "../components/StudentComplaintTable";
 
 const Student = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
@@ -15,6 +15,11 @@ const Student = () => {
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
+  };
+
+  const handleLogout = () => {
+    // perform logout logic here, e.g. clearing session storage, redirecting to login page, etc.
+    navigate("/");
   };
 
   return (
@@ -35,9 +40,12 @@ const Student = () => {
             >
               Lodge Complaints
             </a>
-            <Link to="/" className="text-gray-600 hover:text-oou-purple">
+            <button
+              onClick={handleLogout}
+              className="text-gray-600 hover:text-red-600"
+            >
               Logout
-            </Link>
+            </button>
           </div>
         </nav>
 
@@ -45,9 +53,9 @@ const Student = () => {
           <div className="flex flex-col justify-center text-center items-center gap-12 self-center ">
             <h2 className=" flex flex-col text-3xl font-bold leading-tight">
               Welcome to the Complaint Management System,{" "}
-              <span className="text-oou-blue text-5xl">Ajibola Osunkoya</span>
+              {/* <span className="text-oou-blue text-5xl">Ajibola Osunkoya</span> */}
             </h2>
-            <p className="text-lg">
+            <p className=" max-w-[950px] text-lg">
               We're here to help you resolve your complaints quickly and easily.
               Simply lodge a complaint using the button below, and we'll do our
               best to address it as soon as possible.
